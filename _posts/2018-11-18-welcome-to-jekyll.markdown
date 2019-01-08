@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "Current State of the Union!"
+date:   2018-11-18 18:04:42 -0700
+background: '/assets/Images/background_image.jpg'
+categories: Finance
+---
+Months before Jaden and I met, he bought some stocks. Correction, he bought a ton of one stock. Jaden is a computer scientist and has been coding since he was like 8, so obviously, the one stock he bought was a tech stock. This wasn't that big of a deal until a few weeks ago when tech stocks really took a hit. Since Jaden being the techie he is, didn't think to diversify his portfolio, have lost 80% of the gains he got from this one tech stock.
+
+Long story short, this along side my summer working on Wallstreet, has led me to try and figure out what the current state of the market is. 
+
+
+![WallStreet](/assets/Images/wall.jpg)
+
+I have always heard that you can never predict the market, that's a fool mans move. But with so many obvious risks in the market, that have just been ignored, have compounded the past few months, when will the next business cycle return? When will there be another recession?
+
+There have been many things that have caused the market to dip the past few months:
+- Tariff wars between the US and China
+- South Korea testing weapons (again)
+
+When news events like this occur and the market responds, but only for a second. The market bounces back from this initial scare and it's business as usual. Where my confusion lands here: If these risks affect the market, and these risks haven't gone away and are just compounding... How could a recession not be near?
+
+Let me know what you think!
+
+{:.signature}
+-JoCee
+
+
