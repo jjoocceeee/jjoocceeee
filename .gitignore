@@ -1,3 +1,162 @@
 _site
 .sass-cache
 .jekyll-metadata
+# Ignore bundler config
+/.bundle
+
+# Ignore the default SQLite database.
+/db/*.sqlite3
+
+# Ignore all logfiles and tempfiles.
+/log/*.log
+/tmp
+
+*.gem
+*.rbc
+.bundle
+.config
+coverage
+InstalledFiles
+lib/bundler/man
+pkg
+rdoc
+spec/reports
+test/tmp
+test/version_tmp
+tmp
+
+# Jekyll
+_site/
+.jekyll-cache
+.jekyll-metadata
+.sass-cache
+
+# Ruby
+.bundle/
+.byebug_history
+.ruby-gemset
+.ruby-version
+*.gem
+Gemfile.lock
+
+# Files
+.analysis
+.DS_Store
+*.swp
+*~
+
+# Folders
+/vendor
+bbin/
+bin/
+coverage
+gh-pages/
+pkg/
+test/dest
+tmp/*
+
+#---------------------------------------#
+# Project Ignores                       #
+#---------------------------------------#
+
+# output
+/.temp
+/.tmp
+/build
+/dist
+
+# dependencies
+/node_modules
+.package.swp
+
+# linters
+.eslintcache/
+.eslintrc
+.eslintrc.yaml
+.eslintrc.json
+.eslintrc.js
+.stylelintcache/
+.stylelintrc
+.stylelintrc.yaml
+.stylelintrc.json
+.stylelintrc.js
+
+# misc
+/connect.lock
+/coverage/*
+/report_*
+/reports/
+.sass-cache/
+*.log
+
+
+#---------------------------------------#
+# IDEs & Editors Ignores                #
+#---------------------------------------#
+
+# Sublime Text
+/*.sublime*
+.sublime-gulp.cache
+
+# JetBrains IDEs
+/.idea
+
+
+#---------------------------------------#
+# General Ignores                       #
+#---------------------------------------#
+
+*~
+*.orig
+.vagrant
+
+
+#---------------------------------------#
+# Linux Ignores                         #
+#---------------------------------------#
+
+# KDE directory preferences
+.directory
+
+
+#---------------------------------------#
+# OSX Ignores                           #
+#---------------------------------------#
+
+.DS_Store
+.AppleDouble
+.LSOverride
+.localized
+
+# Icon must end with two \r
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+
+#---------------------------------------#
+# Windows Ignores                       #
+#---------------------------------------#
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
