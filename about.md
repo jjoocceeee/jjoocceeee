@@ -5,10 +5,6 @@ permalink: /about/
 background: '/assets/Images/about.jpg'
 ---
 
-Hi! Welcome to the about me page of my website. I am a computer engineering student senior at the University of Utah. My goal is to work on Wall Street and take my background and love for computers and technology into the finance world. I more to New York, to follow this dream, in May! My other goals and dreams include 
-1. Starting a consumer company, I'm thinking pillows, what are your thoughts?
-2. Getting a Ph.D. or M.B.A.
-3. Being recognized in Forbes
-4. Creating my own font
+This website is to explain our CS 3992 project at the University of Utah. 
 
-Thanks for following learning about me and following my thoughts and experiences I share.
+Our project is to use the quick and dedicated hardware of an FPGA board to gather data and train a neural network which is used to analysis and predict stock prices.

@@ -13,17 +13,14 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: JoCee Porter
+title: CS 3992 Senior Project
 email: joceeporter@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  My portfolio of personal projects ranging from computer science to finance research
-  to photography and everything in between.
+ Senior project website by JoCee Porter and Donovan Bidlack at the University of Utah
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: joceeporter
-github_username:  jjoocceeee
-contact_url: https://jadenholladay.herokuapp.com/jocee
-
+twitter_username: jocee.porter
+github_username: jjoocceeee
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-clean-blog
