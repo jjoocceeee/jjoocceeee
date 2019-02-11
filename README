@@ -3,7 +3,7 @@ Ruby
 jekyll 3.8.5
 
 Install all dependencies:
-bundle installed
+bundle install
 
 To run the server:
 bundle exec jekyll serve
