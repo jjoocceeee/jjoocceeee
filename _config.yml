@@ -17,7 +17,7 @@ title: CS 3992 Senior Project
 email: joceeporter@gmail.com
 # port: 4001
 description: >- # this means to ignore newlines until "baseurl:"
- Senior project website by JoCee Porter and Donovan Bidlack at the University of Utah
+ Senior project website by JoCee, Donovan, Zane, and Mohit at the University of Utah
 baseurl: "/senior_project" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jocee.porter
