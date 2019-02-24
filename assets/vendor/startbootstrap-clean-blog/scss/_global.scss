@@ -1,4 +1,9 @@
 // Global styling for this template
+.basic_image{
+  height: auto;
+  max-width: 150px;
+  margin: 30px 0;
+}
 body {
   font-size: 20px;
   color: $gray-900;

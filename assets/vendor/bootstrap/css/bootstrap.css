@@ -201,6 +201,9 @@ figure {
 img {
   vertical-align: middle;
   border-style: none;
+  padding-right: 15px;
+  padding-left: 15px;
+  object-fit: contain;
 }
 
 svg {
@@ -4198,6 +4201,7 @@ input[type="button"].btn-block {
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
+  
 }
 
 .navbar-brand:hover, .navbar-brand:focus {

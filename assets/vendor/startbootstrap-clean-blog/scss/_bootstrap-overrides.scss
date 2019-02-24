@@ -10,11 +10,18 @@
   font-family: 'Montserrat', 'Noto Serif TC', serif;
 }
 
+img {
+  vertical-align: middle;
+  border-style: none;
+  object-fit: contain;
+  max-width: 100%;
+}
+
 p{
   font-family:'Source Sans Pro', 'Noto Serif TC', serif;
 }
 
-#quote{
+.quote{
   font-family:'Arima Madurai', 'Parisienne', 'Source Sans Pro', serif;
 }
 
@@ -23,8 +30,11 @@ h1,
   color: white;
   font-family:'Arima Madurai', 'Source Sans Pro', 'Noto Serif TC', serif;
 }
+.navbar-brand{
+  font-family:"Parisienne", "Arima Madurai", cursive;
+}
 
-#signature{
+.signature{
   font-family: "Parisienne", cursive;
   font-size: 24px;
   text-shadow: 4px 4px 4px #aaa;
