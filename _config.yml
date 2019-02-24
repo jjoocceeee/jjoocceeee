@@ -23,13 +23,13 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jocee.porter
 github_username: jjoocceeee
 # Build settings
-markdown: kramdown
-theme: jekyll-theme-clean-blog
+# Build settings
+markdown:          kramdown
+paginate:          5
+paginate_path:     "/posts/page:num/"
 plugins:
   - jekyll-feed
-sass:
-    sass_dir: ./_sass
-
+  - jekyll-paginate
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
