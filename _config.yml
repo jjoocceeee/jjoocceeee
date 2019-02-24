@@ -25,12 +25,16 @@ github_username:  jjoocceeee
 contact_url: https://jadenholladay.herokuapp.com/jocee
 
 # Build settings
-markdown: kramdown
-theme: jekyll-theme-clean-blog
+markdown:          kramdown
+paginate:          5
+paginate_path:     "/posts/page:num/"
 plugins:
   - jekyll-feed
-sass:
-    sass_dir: ./_sass
+  - jekyll-paginate
+# remote_theme: jekyll-theme-clean-blog
+# theme: jekyll-theme-clean-blog
+# sass:
+#     sass_dir: ./_sass
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

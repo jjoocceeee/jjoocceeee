@@ -1,0 +1,48 @@
+// Bootstrap overrides for this template
+.btn {
+  font-size: 14px;
+  font-weight: 800;
+  padding: 15px 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 0;
+  // @include sans-serif-font;
+  font-family: 'Montserrat', 'Noto Serif TC', serif;
+}
+
+p{
+  font-family:'Source Sans Pro', 'Noto Serif TC', serif;
+}
+
+#quote{
+  font-family:'Arima Madurai', 'Parisienne', 'Source Sans Pro', serif;
+}
+
+h1,
+.h1{
+  color: white;
+  font-family:'Arima Madurai', 'Source Sans Pro', 'Noto Serif TC', serif;
+}
+
+#signature{
+  font-family: "Parisienne", cursive;
+  font-size: 24px;
+  text-shadow: 4px 4px 4px #aaa;
+}
+
+.btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+    background-color: darken($primary, 7.5) !important;
+    border-color: darken($primary, 7.5) !important;
+  }
+}
+
+.btn-lg {
+  font-size: 16px;
+  padding: 25px 35px;
+}
