@@ -8,21 +8,21 @@ categories: technology
 <div class="container">
   <div class="row">
     <div class="col">
-      <h3>Building an Alexa Skill</h3>
+      <h3>Building an Alexa Skill Example</h3>
     </div>
   </div>
   <div class="row">
     <div class="col">
       <p>
-        A few months ago, I started building my first Alexa Skill. My last name is holladay, so naturally, the first skill I wanted to make was about Holidays! I spent a few days building a skill that would tell you all the holidays (both national, and unofficial) for the current day! Well… before I had time to publish this skill, Amazon, (5 steps ahead like always) pushed a native National Calendar App for Alexa. How can I compete with that?
+        A few months ago, I started building my first Alexa Skill. My last name is Holladay, so naturally, the first skill I wanted to make was about Holidays! I spent a few days building a skill that would tell you all the holidays (both national, and unofficial) for the current day! Well… before I had time to publish this skill, Amazon, (5 steps ahead like always) pushed a native National Calendar App for Alexa. How can I compete with that?
       </p>
       <p>
-        Instead of wasting my time continuing to build something that is already out there (and natively too, no download required!), I decided to just release the code for the Alexa Skill, and write a tutorial on how I built my first Alexa Skill.
+        Instead of wasting my time continuing to build something that is already out there (and natively too, no download required!), I decided to just release my code for the Alexa Skill, and write a tutorial on how I built my first Alexa Skill.
       </p>
       <p>
         You can find my Alexa Source Code here: 
         <a href="https://github.com/jjoocceeee/AlexaSkill_DailyHolidays">https://github.com/jjoocceeee/AlexaSkill_DailyHolidays</a>
-        , and feel free to use my graphql endpoint to copy exactly what I did (because let’s be real, the tutorials that just say Hello World are not that useful). I will also sprinkle in all the tips and tricks I have learned to make development for Alexa much faster and easier. By the end, you will have read a full tutorial for how to create an Alexa skill. 
+        , (I even have created a graphql endpoint for you to query from, because let’s be real, the tutorials that just say Hello World are not that useful). I will also sprinkle in all the tips and tricks I have learned to make development for Alexa much faster and easier. By the end, you will have read a full tutorial for how to create an Alexa skill. 
       </p>
     </div>
   </div>
@@ -31,6 +31,15 @@ categories: technology
       <p>
         Before we get started, let’s get a few Alexa Skill things figured out.
       </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <h3>Alexa Skill Basics</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
       <p>
         Alexa Skills come with a few new words with different meaning. Specifically, Invocation Name, Intents, Samples, and Slots. Here are my unofficial overly simple definitions for these. 
       </p>
@@ -38,11 +47,20 @@ categories: technology
         <strong>Invocation Name:</strong> The words used to trigger your skill, so Alexa knows you are talking to the skill, not her. Mine was “Holiday Calendar”
       </p>
       <p><strong>Intents, Samples, and Slots: </strong>
-        What will be said to trigger a certain command that your skill will respond to. You will need to name your intent, as well as provide words which will trigger this intent. For my Holiday Skill, I chose the intent “Todays Holidays” and it is triggered by a combination of todays holiday. 
+        What will be said to trigger a certain command that your skill will respond to. You will need to name your intent, as well as provide words which will trigger this intent. For my Holiday Skill, I chose the intent “Todays Holidays” and it is triggered by a combination of phrases similar to "todays holiday" (Shown below). 
       </p>
       <p>
         More details can be found in <a href="https://developer.amazon.com/docs/custom-skills/steps-to-build-a-custom-skill.html">Amazon Alexa's Documentation</a>
       </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <h3>Alexa Development</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
       <p>
         Now back to the tutorial… First thing is first, you will need to create an Alexa Developer account 
         <a href="https://developer.amazon.com/alexa/console/ask">https://developer.amazon.com/alexa/console/ask</a>
@@ -81,7 +99,7 @@ categories: technology
   <div class="row">
     <div class="col">
       <p>
-        <h5>Backend API</h5>
+        <h4>Backend API</h4>
       </p>
     </div>
   </div>
@@ -102,7 +120,7 @@ categories: technology
   </div>
   <div class="row">
     <div class="col">
-      <h5>Creating an AWS Account & Lambda FUnction</h5>
+      <h4>Creating an AWS Account & Lambda Function</h4>
     </div>
   </div>
   <div class="row">
@@ -147,7 +165,7 @@ categories: technology
   </div>
   <div class="row">
     <div class="col">
-      <h5>Configure Lambda for Alexa Skill</h5>
+      <h4>Configure Lambda for Alexa Skill</h4>
     </div>
   </div>
   <div class="row">
@@ -169,7 +187,7 @@ categories: technology
   </div>
   <div class="row">
     <div class="col">
-      <h5>Add Code to Lambda Function</h5>
+      <h4>Add Code to Lambda Function</h4>
     </div>
   </div>
   <div class="row">
