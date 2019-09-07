@@ -17,7 +17,7 @@ title: JoCee Holladay
 email: joceeporter@gmail.com
 # port: 4001
 description: >- # this means to ignore newlines until "baseurl:"
- A place to share my finance research, nonprofit experience, business development and everything in between.
+ A place to share my Technology Projects, Finance research, nonprofit experience, business development and everything in between.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jocee.porter
