@@ -30,6 +30,9 @@ paginate_path:     "/posts/page:num/"
 plugins:
   - jekyll-feed
   - jekyll-paginate
+collections:
+  portfolios:
+    output: true
 # remote_theme: jekyll-theme-clean-blog
 # theme: jekyll-theme-clean-blog
 # sass:
