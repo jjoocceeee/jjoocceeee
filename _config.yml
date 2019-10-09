@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: JoCee Holladay
 email: joceeporter@gmail.com
-# port: 4001
+port: 4001
 description: >- # this means to ignore newlines until "baseurl:"
  A place to share my Technology Projects, Finance research, nonprofit experience, business development and everything in between.
 baseurl: "/" # the subpath of your site, e.g. /blog
@@ -30,9 +30,11 @@ paginate_path:     "/posts/page:num/"
 plugins:
   - jekyll-feed
   - jekyll-paginate
+# collections_dir: collections
 collections:
   portfolios:
     output: true
+    permalink: /:collection/:title
 # remote_theme: jekyll-theme-clean-blog
 # theme: jekyll-theme-clean-blog
 # sass:

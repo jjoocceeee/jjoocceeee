@@ -1,0 +1,28 @@
+---
+layout: page
+title: Portfolio Pieces
+background: '/assets/Images/website_working_2.jpg'
+---
+
+<div class="row">
+  {% for pp in site.portfolios %}
+    <div class="col-4">
+      <a href="{{ pp.url | prepend: site.baseurl | replace: '//', '/' }}">
+        <img src="{{ pp.thumbnail | prepend: site.baseurl | replace: '//', '/' }}" class="img-thumbnail" alt="Portfolio Piece">
+    </a>
+  </div>
+
+{% endfor %}
+</div>
+<div class="row mt-3">
+  {% for pp in site.portfolios %}
+    <div class="col-4">
+        <h3 class="pp-title text-center">{{ pp.title }}</h3>
+        {% if pp.description %}
+        <h5 class="pp-subtitle">{{ pp.description }}</h5>
+      {% endif %}
+    </a>
+  </div>
+
+{% endfor %}
+</div>
