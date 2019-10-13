@@ -35,6 +35,9 @@ collections:
   portfolios:
     output: true
     permalink: /:collection/:title
+  highlights:
+    output: true
+    permalink: /:collection/:title
 # remote_theme: jekyll-theme-clean-blog
 # theme: jekyll-theme-clean-blog
 # sass:

@@ -4,32 +4,157 @@ layout: default
 
 <!-- Page Header -->
 {% if page.background %}
-<header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+<header class="masthead pb-0 mb-0"
+  style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
   {% else %}
   <header class="masthead">
     {% endif %}
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="col-lg-6 col-md-8 mx-auto">
           <div class="page-heading">
-            <h1>{{ site.title }}</h1>
-            {% if site.description %}
-            <span class="subheading">{{ site.description }}</span>
-            {% endif %}
+            <h3>A place to share technology tips, book recommendations, and finance research</h3>
           </div>
         </div>
       </div>
     </div>
   </header>
 
-  <div class="container">
+  <div class="container-fluid bckgrnd-dark">
+    <div class="row ">
+      <div class="col-lg-8 col-md-10 mx-auto text-center">
+        <p>
+          <h3>Portfolio Highlight</h3>
+        </p>
+        <!-- <p>
+          The best part about technology is belonging to a community who shares.
+          Sign up below and I will send you my step-by-step tutorial for hosting a beautiful website for 100% FREE. Literally. Stop paying Blogger or Wix.
+        </p>-->
+      </div>
+    </div>
+    <form>
+      <!-- <div class="row justify-content-center align-items-center">
+      <div class="offset-1 col-3">
+          <div class="form-group">
+            <label for="EmailInput"></label>
+            <input type="email" class="form-control" id="EmailInput" aria-describedby="emailHelp" placeholder="Enter email">
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="form-group">
+            <label for="nameInput"></label>
+            <input type="text" class="form-control" id="nameInput" placeholder="Name">
+          </div>
+        </div>
+        <div class="col-3">
+          <button type="submit" class="btn btn-primary btn-sm h-25 d-inline-block">I Want In!</button>
+        </div>
+        </div> -->
+    </form>
+  </div>
+  <!-- <div class="container pt-5">
+    <div class="row">
+      <div class="col-6 offset-3  text-center">
+        <h3>Portfolio</h3>
+        <p>Some of my experiences have included, working at a bank on Wall Street, starting a 501(c)3 nonprofit
+          organization that served hundreds of girls, operating a nuclear reactor, and running a student Venture Fund.
+          Below are a few highlighted portfolio pieces.</p>
+      </div>
+    </div>
+  </div> -->
+  <div class="container py-5">
+    <div class="row">
+      {% for highlight in site.highlights %}
+      <div class="col-4 align-items-center">
+        <div class="image">
+            <span class="black_span">
+            <a href="{{ highlight.url | prepend: site.baseurl | replace: '//', '/' }}">
+              <img src="{{ highlight.thumbnail | prepend: site.baseurl | replace: '//', '/' }}"
+                class=" border-white" alt="Portfolio Piece">
+            </a>
+          </span>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <!-- <div class="row">
+        {% for highlight in site.highlights %}
+        <div class="col">
+
+        </div>
+        {% endfor %}
+    </div> -->
+    <div class="row">
+    {% for highlight in site.highlights %}
+      <div class="col">
+        <h3 class="text-center">{{highlight.title}}</h3>
+        {% for tag in highlight.tags %}
+        <span class="badge badge-pill primary-color">{{tag}}</span>
+      {% endfor %}
+        <p class="small-font">{{highlight.long_description}}</p>
+        <a href="{{ highlight.url | prepend: site.baseurl | replace: '//', '/' }}">
+          <button type="submit" class="btn btn-secondary bckgrnd-dark btn-sm">{{highlight.button_name}}</button>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="container-fluid bckgrnd"
+    style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+    <div class="row py-5">
+      <div class="col col-lg-6 col-md-8 mx-auto text-center">
+        <span class="transparent">
+          <div class="post-heading">
+            <h3 class="">“I learned to always take on things I'd never done before. Growth and comfort do not coexist.”</h3>
+            <h5 class="subheading">- Ginni Rometty, CEO of IBM</h5>
+          </div>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="container py-5">
+    <div class="row">
+      <div class="col">
+        <a href="/assets/Images/portfolio/computerPortrait.jpeg">
+          <img src="/assets/Images/portfolio/computerPortrait.jpeg" class=" border-white img-thumbnail"
+            alt="Portfolio Piece">
+        </a>
+      </div>
+      <div class="col">
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <p class="mt-n4">
+              <h3>Hi, I'm JoCee</h3>
+              I'm a computer engineer graduating in April, 2020 (counting down the days). I love technology, math, and
+              puzzles. Seriously, I'm one of <i>those</i> people, I do a sudoku every. single. day.
+              I also enjoy building web applications. GraphQl and React are my go tos. I do have experience with
+              Python, .Net, Java, R, and a handful of other languages. My current side project is creating an
+              Android app to enhance Instagram Stories (I know, I know, Instagram is an addiction, but if it gets me coding
+              it can't be THAT bad?!?!). What are you building for fun?
+              <!-- I am a computer engineer, passionate about bringing pink into the tech world. What does that mean? With only 20% of the tech workforce as female, there  is an obvious lack of
+                gender diversity. Many companies have set goals to reach 50% female workforce in the forseeable future. I am here to support this. I want to go one step further, and make sure that 
+                women and girls are comfortable with technology. Make pink a more common color for companies and products (without the pink tax). Let girls know they are able to apply to this job, with a small amount
+                of pink in the application.  -->
+            </p>
+          </div>
+        </div>
+        <div class="row mt-n5">
+          <div class="col-6">
+            <a href="/about">
+              <p class="text-pink">LEARN MORE</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
 
         {{ content }}
 
-        <!-- Home Post List -->
         {% for post in site.posts limit : 5 %}
 
         <article class="post-preview">
@@ -55,11 +180,10 @@ layout: default
 
         {% endfor %}
 
-        <!-- Pager -->
         <div class="clearfix">
           <a class="btn btn-primary float-right" href="{{"/posts" | relative_url }}">View All Posts &rarr;</a>
         </div>
 
       </div>
     </div>
-  </div>
+  </div> -->
