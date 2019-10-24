@@ -87,3 +87,49 @@ h1,
 .transparent{
   opacity: 0.5;
 }
+
+
+.quote { 
+  background: #fff; 
+  border-top: 5px solid #F2CBCB; 
+  border-bottom: 5px solid #F2CBCB; 
+  margin: 1.5em 0px; 
+  padding: 0.5em 10px; 
+  quotes: "\201C""\201D""\2018""\2019"; 
+  color: $secondary; 
+  font-size: 23px; 
+  padding-top: 35px; 
+  padding-left: 50px; 
+  padding-right: 50px; 
+  padding-bottom: 35px; 
+}
+
+.quote:before { 
+  color: $secondary; 
+  content: open-quote; 
+  font-size: 4em; 
+  line-height: 0.1em; 
+  margin-right: 0.1em; 
+  vertical-align: -0.4em; 
+  font-family: Volkhov, Georgia, Serif; 
+}
+
+.quote:after { 
+  color: $secondary; 
+  content: close-quote; 
+  font-size: 4em; 
+  line-height: 0.1em; 
+  margin-left: 0.1em; 
+  vertical-align: -0.6em; 
+  font-family: Volkhov, Georgia, Serif; 
+}
+
+.quote p { 
+  display: inline; 
+}
+
+.image-caption {
+  font-size: 15px; 
+  margin-top: -0.10rem !important;
+  text-align: center !important; 
+}

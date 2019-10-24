@@ -7,6 +7,7 @@ bundle install
 
 To run the server:
 bundle exec jekyll serve
+Side Note: You need internet to run this lol @ me.
 
 Open a web browser and point to:
 http://127.0.0.1:4000

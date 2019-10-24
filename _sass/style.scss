@@ -21,6 +21,10 @@ div.gallery {
   float: left;
   width: 180px;
 }
+.pinkStyle {
+  border-top: 5px solid #F2CBCB; 
+  border-bottom: 5px solid #F2CBCB;
+}
 
 div.gallery:hover {
   border: 1px solid #777;
