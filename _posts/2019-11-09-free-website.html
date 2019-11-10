@@ -1,0 +1,646 @@
+---
+layout: post
+title: "Building a Website for Free (No seriously)"
+date: 2019-11-09 18:04:42 -0700
+description: Using Github Pages, jekyll, and some computer knowledge. Build + host a website for free!
+background: '/assets/Images/background_image.jpg'
+categories: Finance
+---
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h2 class="heading">Why Create your own Website (other than the obvious reason... because it's free + easy)</h2>
+      <p>Seriously... why take the time to create your own website instead of just paying Wix, Blogger, or another
+        website company to create a website???</p>
+      <p>
+        In a world that is becoming more and more technology focused and driven, being at least aware of how the a
+        website works, even on a very basic level won’t ever hurt. In fact, knowing a few secrets behind website can
+        keep you from getting taken advantage of in the future. Let’s face it, we all need technology in our lives, but
+        we don’t need the extra cost for it.
+      </p>
+      <p>
+        My favorite thing about the tech industry, is how strong the open source community is. Seriously, there are
+        people willing to help and answer all of your questions. People who fix your code, provide resources, and spend
+        their free time creating technologies for you to use… for free! The only difficult parts, are:
+        <ol>
+          <li>
+            Understanding what they are talking about
+          </li>
+          <li>
+            Figuring out where these resources are
+          </li>
+        </ol>
+      </p>
+      <p>
+        Don’t worry, I will walk you through both, and by the end of this post, you will have a basic understanding of
+        the websites, HTML, and computer systems. We will go through everything slowly, and I will hold your hand the
+        entire way. This post will be very long, but it will be worth it.
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <h2 class="heading">
+        Choosing your website template
+      </h2>
+      <p>
+        Each website has a personality. Eventually, when your blog supports millions of viewers a day, you will probably
+        need a fully customizable website built that matches your brand. You will get there… But before you are on that
+        level, we will cheat a little and start with a template.
+      </p>
+      <p>
+        A Jekyll template is a website structure that is built for blogs. Like in a house, Jekyll provides the structure
+        of the building, the theme designs the floor plan, and your blog posts will fit in as the furniture.
+      </p>
+      <p>
+        There are hundreds of Jekyll themes. Each template is built the same, but designed differently. Luckily each
+        template has a great instruction set of how to easily modify the design to customize it to your needs. Feel free
+        to browse different website themes at <a href="http://jekyllthemes.org">http://jekyllthemes.org</a>. The
+        template I am going to walk you through is the <a href="http://jekyllthemes.org/themes/clean-blog/"> Clean Blog
+          Theme</a>
+      </p>
+      <p>
+        Feel free to choose a different one if you would like. The general setup for each will be the same. But if there
+        is ever a difference, and you get confused, shoot me a message on IG <a
+          href="https://www.instagram.com/jocee.holladay/">@jocee.holladay</a> and we can walkthrough it together.
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <h2 class="heading">
+        Getting to the technical part
+      </h2>
+      <p>
+        The next few steps might be very confusing. You honestly don’t need to understand what exactly is going on, we
+        just need to set up your computer so that you can code! Look your basically, already, sort of, a developer!
+      </p>
+      <h5 class="heading">Step 1: Downloading Programs</h5>
+      <p>
+        We need to install a way to edit the code
+        This is called a IDE or editor. A good one for beginners is Visual Studio Code, you can download that <a
+          href="https://code.visualstudio.com/download">here</a>.
+      </p>
+      <p>
+        You will also need to download Git. I’ll explain Git later.
+        <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a>
+      </p>
+      <h5 class="heading">Step 2: Downloading template code</h5>
+      <p>
+        We need to copy the template code. In order to customize the website to make it yours, and to add blog posts, we
+        need to copy the template, and add your additions. Copying code is simple, you go to the online location, where
+        the code is stored (this location is called a repository) where the template code is stored, and use git
+        (downloaded in step 1) to copy the code onto your computer.
+      </p>
+      <p>
+        First, let’s get our ducks in a row and create a GitHub account if you don’t have one. GitHub is the secret
+        sauce that will host your website for free. Don’t skip this step. Having a GitHub account makes you like a real
+        techie! So congratulations are in order.
+      </p>
+      <p>
+        An account can be created <a href="https://github.com/">here</a>
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <p>
+        Once your account is created, you will go to the site where the repository is. Remember, a repository is
+        basically an online location that stores code. Every major project has a repository. Your website will even have
+        it’s own repository too!
+      </p>
+      <p>
+
+      </p>
+    </div>
+  </div>
+  <div class="row justify-content-center align-items-center imageContainer">
+    <div class="col-12">
+      <a target="_blank" href="/assets/Images/posts/freeBlog/github.png">
+        <img class="basic-image outline-image" src="/assets/Images/posts/freeBlog/github.png" alt="Github Repository">
+      </a>
+      <p class="image-caption">Github Repo for The Clean Blog</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <p>
+        This is what it looks like. We will need to clone this repo. This is done by pressing the <b>clone or
+          download</b> button. Leave this open, we will come back here shortly.
+      </p>
+      <p>
+        Before we can copy/ download the code for this template, we need to create a place that we want to store the
+        code. This can be anywhere on your computer. Put it in Documents, Desktop, anywhere you want. Just find a place
+        you won't forget.
+      </p>
+    </div>
+  </div>
+  <div class="row justify-content-center align-items-center imageContainer">
+    <div class="col-8">
+      <a target="_blank" href="/assets/Images/posts/freeBlog/fileSystem.png">
+        <img class="basic-image outline-image" src="/assets/Images/posts/freeBlog/fileSystem.png" alt="File System">
+      </a>
+      <p class="image-caption">File System with new folder to store my blog</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <p>
+        Once you have created a folder for your website to be stored on your computer, we will need to get the
+        <b>path</b> to that location. A <b>path</b> is just a pointer to a certain file location.
+      </p>
+      <p>
+        You can get the path by just copying the location in the top navigation bar. In my case the path is
+        <b>C:\Users\jocee\Documents\side_projects\blog_posts\freeWebsiteBlog</b>
+      </p>
+      <p>
+        Copy your path, we will be using it shortly.
+      </p>
+      <p>
+        Now we will do a few things on the <b>command line</b>. The command prompt (also referred to as the <i>command
+          prompt</i>) is simply a way to control your computer without the pretty and colorful displays that you are
+        used to. Everything you do with a mouse, can be done on the <b>command line</b>.
+      </p>
+      <p>
+        To get to the command line press the windows key or start button (bottom left) and type “cmd”, select the
+        <b>command prompt</b>. If you are using a Mac, instead of a command prompt, you will use the <b>terminal</b>.
+      </p>
+      <p>
+        Remember how you copied your path? Well we are going to get to that location through the <b>command prompt</b>.
+        In the <b>command prompt</b> type in <b>“cd”</b> (short for change directory) then your path that you copied
+        from above.
+      </p>
+    </div>
+  </div>
+  <div class="row justify-content-center align-items-center imageContainer">
+    <div class="col-12">
+      <a target="_blank" href="/assets/Images/posts/freeBlog/cd.png">
+        <img class="basic-image outline-image" src="/assets/Images/posts/freeBlog/cd.png" alt="Change Directory">
+      </a>
+      <p class="image-caption">cd stands for <b>Change Directly</b>, can it is used to navigate through the file system
+        on your computer</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <p>
+        Go back to the Jekyll Repository on Github (image 1) and copy the link (circled in blue). Flip back to your
+        <b>command prompt</b> and type <b>“git clone ”</b> and then paste in the repository like so
+      </p>
+    </div>
+  </div>
+  <div class="row justify-content-center align-items-center imageContainer">
+    <div class="col-12">
+      <a target="_blank" href="/assets/Images/posts/freeBlog/gitClone.png">
+        <img class="basic-image outline-image" src="/assets/Images/posts/freeBlog/gitClone.png" alt="Git Clone">
+      </a>
+      <p class="image-caption"><b>Git Clone</b> is the standard way to pull code from another location. Think of how
+        much time it saves to just type <b>git clone </b> instead of downloading and unzipping large files of code!</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <p>A bunch of magic will happen, and when “done” appears, the magic is complete. This will completely copy all the
+        code from the website to your local computer. We are almost finished setting up the framework of your website.
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <h5 class="heading">Step 3: Getting into the code</h5>
+      <p>
+        Remember Visual Studio Code, which we downloaded in the beginning? Now it is time to use it. Open Visual Studio
+        Code.
+      </p>
+    </div>
+  </div>
+  <div class="row justify-content-center align-items-center imageContainer">
+    <div class="col-12">
+      <a target="_blank" href="/assets/Images/posts/freeBlog/VSCode.png">
+        <img class="basic-image outline-image" src="/assets/Images/posts/freeBlog/VSCode.png" alt="Visual Studio Code">
+      </a>
+      <p class="image-caption">Visual Studio Code is a tool used to write code</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <p>
+        Add the folder containing all the code you just copied.
+        C:\Users\jocee\Documents\side_projects\blog_posts\freeWebsiteBlog\startbootstrap-clean-blog-jekyll Is where my
+        code was stored. Once it has been added to Visual Studio Code, let’s expand the file so we can see all the
+        folders we copied in the left view.
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <h2 class="heading">Project Structure</h2>
+      <p>The most confusing part about web development, in my opinion, is the folder structure. There are so many files
+        and folders which have certain names, and do certain things.</p>
+    </div>
+  </div>
+  <div class="row justify-content-center align-items-center imageContainer">
+    <div class="col-12">
+      <a target="_blank" href="/assets/Images/posts/freeBlog/Project_structure.png">
+        <img class="basic-image outline-image" src="/assets/Images/posts/freeBlog/Project_structure.png"
+          alt="Project Structure">
+      </a>
+      <p class="image-caption">Jekyll has a very specific project structure. There are _includes, _layouts, _posts, etc.
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <p>For the most part, you can ignore most files and folders. They are just there to do the heavy lifting of
+        creating a website for you, so you can do less work. A few basic things to note are:
+        <ol>
+          <li>
+            <b>README.md</b> is a certain type of file which will give you an explanation to how the code works. In our
+            case, this file will contain customization options.
+          </li>
+          <li>
+            Any file ending in <b>.html</b> is a template for what will be on your website: 404.html, contact.html,
+            about.html, etc.
+          </li>
+          <li>
+            The <b>img</b> folder will store any images you want on your blog
+          </li>
+          <li>
+            The <b>_posts</b> folder is where you will add your blog posts.
+          </li>
+        </ol>
+      </p>
+      <p>
+        Pretty simple right?
+      </p>
+      <p>
+        Okay, now for the fun part. Let's get your cloned blog up and running!
+      </p>
+      <p>
+        The <b>README</b> gives you the clues on how to run your site, but the steps should be as follows
+        <ol>
+          <li>
+            Make sure the correct theme is copied in the Gemfile (A gem file let’s your computer know what it needs to
+            download in order to run your website. There are many moving pieces behind the scene that makes the website
+            work, and these pieces are kept track here)
+          </li>
+          <li>
+            Install all components in the <b>Gemfile</b>. By typing <b>bundle install</b> into your <b>command
+              prompt</b>.
+          </li>
+          <li>
+            A <b>_config.yml</b>file will be created during step 2 (if it doesn’t already exist). Replace the theme with
+            the your blogs theme. In my case I had to add the theme entirely by adding the line theme:
+            Jekyll-theme-clean-blog to the file on a random new line.
+          </li>
+          <li>
+            Run the website by typing <b>bundle exec jekyll serve</b>
+          </li>
+        </ol>
+      </p>
+    </div>
+  </div>
+  <div class="row justify-content-center align-items-center imageContainer">
+    <div class="col-12">
+      <a target="_blank" href="/assets/Images/posts/freeBlog/bundleExec.png">
+        <img class="basic-image outline-image" src="/assets/Images/posts/freeBlog/bundleExec.png"
+          alt="Running the blog">
+      </a>
+      <p class="image-caption">How to run your website locally</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <p>
+        The <b>command prompt</b> will print out a bunch of stuff.. but don’t worry about most of it. This may take a
+        moment or so to finish, but eventually you will see something like:
+      </p>
+      <p>
+        Server address: http://127.0.0.1:4000/startbootstrap-clean-blog-jekyll/
+        Server running... press ctrl-c to stop.
+      </p>
+      <p>
+        Hooray! The website is up and running….. locally. You’re website is available on your computer, but nowhere
+        else. To see it, open up a browser, and type in the server address:
+        <b>http://127.0.0.1:4000/startbootstrap-clean-blog-jekyll/</b>
+        You will see a blog with a few example posts! Awesome! Now we just need to customize it to be YOUR blog.
+      </p>
+      <p>
+        (This will continue running in the background. Every time you make a change to a file in Visual Studio Code and
+        save it, the website will refresh with the new changes! Pretty cool huh?)
+      </p>
+    </div>
+  </div>
+  <div class="row justify-content-center align-items-center imageContainer">
+    <div class="col-12">
+      <a target="_blank" href="/assets/Images/posts/freeBlog/blogRunning.png">
+        <img class="basic-image outline-image" src="/assets/Images/posts/freeBlog/blogRunning.png"
+          alt="Running the blog">
+      </a>
+      <p class="image-caption">Example Blog</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <h2 class="heading">Customizing your blog</h2>
+      <p>
+        The following steps are all specific for the Clean Jekyll Themed Blog, any Jekyll theme you choose will be very
+        similar, but not exactly the same. Consult the <b>README.MD</b> file for your theme to know the exact steps you
+        should be taking. This section will be a useful reference about the basics of how a Jekyll Blog works if you are
+        interested in learning more.
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <h4 class="heading">Creating a Post</h4>
+      <p>
+        In the <b>_posts</b> folder, is where each of your posts will be added. I still cheat for every new blog post I
+        write, and copy an old file, rename it, and paste in the new blog post.
+      </p>
+      <p>
+        The header is super important. It is how the magic behind this code, it knows the page structure and details.
+        For a Jekyll template, headers begin and end with “---"
+      </p>
+      <p>
+        For the Clean blog Jekyll template I used
+        This is how it looks:
+      </p>
+    </div>
+  </div>
+  <div class="row justify-content-center align-items-center imageContainer">
+    <div class="col-12">
+      <a target="_blank" href="/assets/Images/posts/freeBlog/header.png">
+        <img class="basic-image outline-image" src="/assets/Images/posts/freeBlog/header.png" alt="Running the blog">
+      </a>
+      <p class="image-caption">Jekyll Header</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <p>
+        Just change Title, date, and background keeping the same format.
+      </p>
+      <p>
+        Both Title and data are obvious what they are, but the background is less obvious. For this Clean Blog Template,
+        this is the background image that appears at the top of the page.
+      </p>
+      <p>
+        Let’s break it down:
+
+        What does '/assets/Images/background_image.jpg' mean?
+      </p>
+      <p>
+        In computers, everything is well organized. Including the folder structure. Everything between slashes / are
+        folders, and the name at the very end with the file extension is the actual file. In this example, the
+        background image is located inside the Images folder which is inside the assets folder. The file is named
+        background_image.jpg. You can place an image anywhere, just make sure that you copy the path to it. To make this
+        easier, you can use the file explorer to copy the image path (like we did earlier), and type on the name of the
+        picture along with the extension.
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <h4 class="heading">HTML Basics</h4>
+      <p>
+        HTML is a language for computers. It stands for Hyper Text Markup Language. If you want to learn more about
+        HTML, how it works, why it is this way, etc. then feel free to take an online course in HTML and CSS. I will
+        only be showing you how to use HTML enough to get you a personal website up and running.
+      </p>
+      <p>
+        In HTML everything goes in tags<b> &lt; &gt &lt; /&gt</b>
+      </p>
+      <p>
+        So when you want to write a paragraph, you add an opening paragraph tag, and end it with a closing paragraph
+        tag, like so:
+      </p>
+      <p>
+        &lt;p&gt;
+        I am a paragraph.
+        &lt;/p&gt;
+
+      </p>
+      <p>
+        Here is how my blog post looked different with and without paragraph tags
+      </p>
+    </div>
+  </div>
+  <div class="row justify-content-center align-items-center imageContainer">
+    <div class="col">
+      <a target="_blank" href="/assets/Images/posts/freeBlog/noparagraphsBlog.png">
+        <img class="basic-image outline-image" src="/assets/Images/posts/freeBlog/noparagraphsBlog.png"
+          alt="Running the blog">
+      </a>
+      <p class="image-caption">Blog without paragraph tags</p>
+    </div>
+    <div class="col">
+      <a target="_blank" href="/assets/Images/posts/freeBlog/noParagraphsCode.png">
+        <img class="basic-image outline-image" src="/assets/Images/posts/freeBlog/noParagraphsCode.png"
+          alt="Running the blog">
+      </a>
+      <p class="image-caption">Blog Code without paragraph tags</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <p>
+        See how enters/spaces don’t create paragraphs? You need the &lt;p&gt;&lt;/p&gt; paragraph tags to designate a
+        new paragraph.
+      </p>
+      <p>
+        Compare the above images, to when I do add paragraph tags
+      </p>
+    </div>
+  </div>
+  <div class="row justify-content-center align-items-center imageContainer">
+    <div class="col-6">
+      <a target="_blank" href="/assets/Images/posts/freeBlog/paragraphBlog.png">
+        <img class="basic-image outline-image" src="/assets/Images/posts/freeBlog/paragraphBlog.png"
+          alt="Running the blog">
+      </a>
+      <p class="image-caption">Blog with paragraph tags</p>
+    </div>
+    <div class="col-6 ">
+      <a target="_blank" href="/assets/Images/posts/freeBlog/ParagraphCode.png">
+        <img class="basic-image outline-image" src="/assets/Images/posts/freeBlog/ParagraphCode.png"
+          alt="Running the blog">
+      </a>
+      <p class="image-caption">Blog Code with paragraph tags</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <p>
+        For anything in HTML there is a tag that goes with it, headers, images, forms, you name it. If you need to add
+        something to your website, a good place to start would be to google “HTML tags ….” and just copy and paste the
+        tags there.
+        I will leave you to experiment with different tags you can use for your website. But here are a few starting
+        points:
+        &lt;h1&gt;&lt;/h1&gt; through &lt;h5&gt;&lt;/h5&gt; are header tags. They will be larger text, h1 is the largest
+        header style, with h2 a bit smaller down to h5 which is the smallest.
+
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <h4 class="heading">Adding an Image</h4>
+      <p>
+        I keep all of my images in the assets folder. Some other themes keep them in an images folder. Regardless, they
+        all do the same. Just an organized place to store the images you want in your blog.
+      </p>
+    </div>
+  </div>
+  <div class="row justify-content-center align-items-center imageContainer">
+    <div class="col-12">
+      <a target="_blank" href="/assets/Images/posts/freeBlog/image_structure.png">
+        <img class="basic-image outline-image" src="/assets/Images/posts/freeBlog/image_structure.png"
+          alt="Running the blog">
+      </a>
+      <p class="image-caption">Image Folder Structure</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <p>
+        Here is what my assets folder looks like. I keep all of my styling and customizations in this folder. I will go
+        into how to add specific styles and looks to your website in another post. For now, we just need an Images
+        folder. This contains all of the background images for the site. The posts folder contains all of the images in
+        posts. You can be more organized than that, but it’s really up to you.
+      </p>
+      <p>
+        The pattern with these folders, is that they are just organization. I made it up for my needs. You can change
+        the ordering and names, and it’s totally fine! We just need to provide a way for the website to know where to
+        find your images.
+      </p>
+      <p>
+        Anywhere you want a picture in your post, you need to add an image tag &lt;img&gt;. Simple, like in the good ole
+        days of MySpace. How the html knows what image to display, is with the src attribute inside the opening image
+        tag. This will be the folder file structure for your website.
+      </p>
+      <p>
+        &lt;img src="/assets/Images/posts/aboutMeBeforeJune2019.JPG" alt="Text that appears if the image doesn't
+        load"&gt;
+      </p>
+      <p>
+        Go ahead and customize the <b>about.html</b>, and add a few <b>_posts</b>. The <b>Readme.md</b> also contains
+        quite a few customization options like the name and description of your website. I'll be right here when you
+        finish.
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <h3 class="heading"> Deploying Your Website</h3>
+      <p>
+        Now that you have the perfect website, we need to let it out into the wild.
+      </p>
+      <p>
+        First, let’s save all the changes. After saving every file you edited (ctrl-s), we will commit the changes. You
+        will run these commands every time you add a new post or change anything.
+
+        In the command prompt type the following:
+      </p>
+      <p>
+        git add .
+
+        git commit -m “Random message that will be saved with your changes”
+      </p>
+      <p>
+        Perfect! Now, remember the <b>Github</b> account that you created? We will need to go to your account, and
+        create a repository for your website.
+      </p>
+    </div>
+  </div>
+  <div class="row justify-content-center align-items-center imageContainer">
+    <div class="col-12">
+      <a target="_blank" href="/assets/Images/posts/freeBlog/addingARepo.png">
+        <img class="basic-image outline-image" src="/assets/Images/posts/freeBlog/addingARepo.png"
+          alt="Adding a repository">
+      </a>
+      <p class="image-caption">Adding a repository to store your website code</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <p>
+        Add a repository name and description, then press create <b>repository</b>.
+      </p>
+      <p>
+        You will get to a place that looks like this:
+      </p>
+    </div>
+  </div>
+  <div class="row justify-content-center align-items-center imageContainer">
+    <div class="col-12">
+      <a target="_blank" href="/assets/Images/posts/freeBlog/newRepo.PNG">
+        <img class="basic-image outline-image" src="/assets/Images/posts/freeBlog/newRepo.PNG"
+          alt="Adding a repository">
+      </a>
+      <p class="image-caption">Adding a repository to store your website code</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <p>
+        Now, we need to let our website know, that it has a home online. In the command prompt copy what is in the blue
+        circle for your repository.
+      </p>
+      <p>
+        This will set the correct location for your website, and push the changes to that location.
+        You will see something like this:
+      </p>
+    </div>
+  </div>
+  <div class="row justify-content-center align-items-center imageContainer">
+    <div class="col-8">
+      <a target="_blank" href="/assets/Images/posts/freeBlog/gitPush.png">
+        <img class="basic-image outline-image" src="/assets/Images/posts/freeBlog/gitPush.png" alt="Git Push">
+      </a>
+      <p class="image-caption">Git Push is the common way to post code to a repository</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <p>
+        Okay, you are almost done! I know it has been a long tutorial, but we have covered and learnt so much!
+        The last step is to let Github know that you want to use github pages to hose your site for <b>free</b>. Click
+        the <b>settings</b> tab on the top right. Scroll down to the GitHub Pages section, and select the dropdown under
+        source. Select the master branch.
+      </p>
+      <p>
+        Once your website is deployed, and ready, the green highlighted box will appear with the URL to your website.
+        Now your website will be accessible from anywhere!
+      </p>
+    </div>
+  </div>
+  <div class="row justify-content-center align-items-center imageContainer">
+    <div class="col-12">
+      <a target="_blank" href="/assets/Images/posts/freeBlog/githubPages.png">
+        <img class="basic-image outline-image" src="/assets/Images/posts/freeBlog/githubPages.png" alt="Github Pages">
+      </a>
+      <p class="image-caption">Github Pages hosts Websites for free</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <p>
+        Ta-da! You now have a shiny, completely customizable, and free blog. It took a bit of work to get here, but
+        along the way you learned many of the secrets to being a programmer. Congrats!
+      </p>
+      <p>
+        If you run into any troubles at all along the way, shoot me a DM on Instagram (<a
+          href="https://www.instagram.com/jocee.holladay/">@jocee.holladay</a>) and I will walk you through the process
+        and answer your questions.
+      </p>
+    </div>
+  </div>
+
+  <div>
+    <p class="signature" id="signature">
+      -JoCee
+    </p>
+  </div>
+</div>
