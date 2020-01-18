@@ -3,26 +3,43 @@ layout: page
 title: Portfolio Pieces
 background: '/assets/Images/website_working_2.jpg'
 ---
-
-<div class="row">
-  {% for pp in site.portfolios %}
-    <div class="col-4">
-      <a href="{{ pp.url | prepend: site.baseurl | replace: '//', '/' }}">
-        <img src="{{ pp.thumbnail | prepend: site.baseurl | replace: '//', '/' }}" class="img-thumbnail" alt="Portfolio Piece">
-    </a>
+  <div class="container pt-5">
+    <div class="row">
+      <div class="col-12">
+        <h3 class="text-center">Portfolio Highlight</h3>
+        <p>Some of my experiences have included, working at a bank on Wall Street, starting a 501(c)3 nonprofit
+          organization that served hundreds of girls, operating a nuclear reactor, and running a student Venture Fund.
+          Below are a few highlighted portfolio pieces.</p>
+      </div>
+    </div>
   </div>
-
-{% endfor %}
-</div>
-<div class="row mt-3">
-  {% for pp in site.portfolios %}
-    <div class="col-4">
-        <h3 class="pp-title text-center">{{ pp.title }}</h3>
-        {% if pp.description %}
-        <h5 class="pp-subtitle">{{ pp.description }}</h5>
-      {% endif %}
-    </a>
+  <div class="container py-5">
+    <div class="row">
+      {% for highlight in site.highlights %}
+      <div class="col-lg-4 col-md-4 col-sm-0 align-items-center d-none d-lg-block">
+        <div class="image">
+            <span class="black_span">
+            <a href="{{ highlight.url | prepend: site.baseurl | replace: '//', '/' }}">
+              <img src="{{ highlight.thumbnail | prepend: site.baseurl | replace: '//', '/' }}"
+                class=" border-white" alt="Portfolio Piece">
+            </a>
+          </span>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="row my-3">
+    {% for highlight in site.highlights %}
+      <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
+        <h3 class="text-center">{{highlight.title}}</h3>
+        {% for tag in highlight.tags %}
+        <span class="badge badge-pill primary-color">{{tag}}</span>
+      {% endfor %}
+        <p class="small-font">{{highlight.long_description}}</p>
+        <a href="{{ highlight.url | prepend: site.baseurl | replace: '//', '/' }}">
+          <button type="submit" class="btn btn-secondary bckgrnd-dark btn-sm">{{highlight.button_name}}</button>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
   </div>
-
-{% endfor %}
-</div>

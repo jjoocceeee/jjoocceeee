@@ -1,4 +1,6 @@
 ---
+maincolor: '#AC716E'
+secondarycolor: '#F2CBCB'
 layout: default
 ---
 
@@ -21,21 +23,18 @@ layout: default
     </div>
   </header>
 
-  <div class="container-fluid bckgrnd-dark">
+  <div class="container-fluid" style="background-color: {{ page.maincolor }}">
     <div class="row ">
       <div class="col-lg-8 col-md-10 col-sm-12 mx-auto text-center">
         <p>
-          <h3>Portfolio Highlight</h3>
-        </p>
-        <!-- <p>
           The best part about technology is belonging to a community who shares.
-          Sign up below and I will send you my step-by-step tutorial for hosting a beautiful website for 100% FREE. Literally. Stop paying Blogger or Wix.
-        </p>-->
+          Sign up below and I will send you my step-by-step tutorial for hosting a beautiful website for 100% FREE. Literally. No strings attached.
+        </p>
       </div>
     </div>
     <form>
-      <!-- <div class="row justify-content-center align-items-center">
-      <div class="offset-1 col-3">
+      <div class="row justify-content-center align-items-center">
+        <div class="offset-1 col-3">
           <div class="form-group">
             <label for="EmailInput"></label>
             <input type="email" class="form-control" id="EmailInput" aria-describedby="emailHelp" placeholder="Enter email">
@@ -50,68 +49,8 @@ layout: default
         <div class="col-3">
           <button type="submit" class="btn btn-primary btn-sm h-25 d-inline-block">I Want In!</button>
         </div>
-        </div> -->
+        </div>
     </form>
-  </div>
-  <!-- <div class="container pt-5">
-    <div class="row">
-      <div class="col-6 offset-3  text-center">
-        <h3>Portfolio</h3>
-        <p>Some of my experiences have included, working at a bank on Wall Street, starting a 501(c)3 nonprofit
-          organization that served hundreds of girls, operating a nuclear reactor, and running a student Venture Fund.
-          Below are a few highlighted portfolio pieces.</p>
-      </div>
-    </div>
-  </div> -->
-  <div class="container py-5">
-    <div class="row">
-      {% for highlight in site.highlights %}
-      <div class="col-lg-4 col-md-4 col-sm-0 align-items-center d-none d-lg-block">
-        <div class="image">
-            <span class="black_span">
-            <a href="{{ highlight.url | prepend: site.baseurl | replace: '//', '/' }}">
-              <img src="{{ highlight.thumbnail | prepend: site.baseurl | replace: '//', '/' }}"
-                class=" border-white" alt="Portfolio Piece">
-            </a>
-          </span>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-    <!-- <div class="row">
-        {% for highlight in site.highlights %}
-        <div class="col">
-
-        </div>
-        {% endfor %}
-    </div> -->
-    <div class="row my-3">
-    {% for highlight in site.highlights %}
-      <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
-        <h3 class="text-center">{{highlight.title}}</h3>
-        {% for tag in highlight.tags %}
-        <span class="badge badge-pill primary-color">{{tag}}</span>
-      {% endfor %}
-        <p class="small-font">{{highlight.long_description}}</p>
-        <a href="{{ highlight.url | prepend: site.baseurl | replace: '//', '/' }}">
-          <button type="submit" class="btn btn-secondary bckgrnd-dark btn-sm">{{highlight.button_name}}</button>
-        </a>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-  <div class="container-fluid bckgrnd"
-    style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
-    <div class="row py-5">
-      <div class="col col-lg-6 col-md-8 col-sm-12 mx-auto text-center">
-        <span class="transparent">
-          <div class="post-heading">
-            <h3 class="">“I learned to always take on things I'd never done before. Growth and comfort do not coexist.”</h3>
-            <h5 class="subheading">- Ginni Rometty, CEO of IBM</h5>
-          </div>
-        </span>
-      </div>
-    </div>
   </div>
   <div class="container py-5">
     <div class="row">
@@ -132,10 +71,6 @@ layout: default
               Python, .Net, Java, R, and a handful of other languages. My current side project is creating an
               Android app to enhance Instagram Stories (I know, I know, Instagram is an addiction, but if it gets me coding
               it can't be THAT bad?!?!). What are you building for fun?
-              <!-- I am a computer engineer, passionate about bringing pink into the tech world. What does that mean? With only 20% of the tech workforce as female, there  is an obvious lack of
-                gender diversity. Many companies have set goals to reach 50% female workforce in the forseeable future. I am here to support this. I want to go one step further, and make sure that 
-                women and girls are comfortable with technology. Make pink a more common color for companies and products (without the pink tax). Let girls know they are able to apply to this job, with a small amount
-                of pink in the application.  -->
             </p>
           </div>
         </div>
@@ -149,41 +84,54 @@ layout: default
       </div>
     </div>
   </div>
-  <!-- <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-
-        {{ content }}
-
-        {% for post in site.posts limit : 5 %}
-
-        <article class="post-preview">
-          <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-            <h2 class="post-title">{{ post.title }}</h2>
-            {% if post.subtitle %}
-            <h3 class="post-subtitle">{{ post.subtitle }}</h3>
-            {% else %}
-            <h3 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 15 }}</h3>
-            {% endif %}
-          </a>
-          <p class="post-meta">Posted by
-            {% if post.author %}
-            {{ post.author }}
-            {% else %}
-            {{ site.author }}
-            {% endif %}
-            on
-            {{ post.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=post.content %}</p>
-        </article>
-
-        <hr>
-
-        {% endfor %}
-
-        <div class="clearfix">
-          <a class="btn btn-primary float-right" href="{{"/posts" | relative_url }}">View All Posts &rarr;</a>
-        </div>
-
+  <div class="container-fluid bckgrnd"
+    style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+    <div class="row py-5">
+      <div class="col col-lg-6 col-md-8 col-sm-12 mx-auto text-center">
+        <span class="transparent">
+          <div class="post-heading">
+            <h3 class="">“I learned to always take on things I'd never done before. Growth and comfort do not coexist.”</h3>
+            <h5 class="subheading">- Ginni Rometty, CEO of IBM</h5>
+          </div>
+        </span>
       </div>
     </div>
-  </div> -->
+  </div>
+  <div class=" mt-5 container">
+    <div class="row mb-3">
+      <div class="col text-center">
+        <h1 style="color: {{page.maincolor}}">Commonly Asked Questions</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h3>Did you graduate college?</h3>
+        <p>
+          I graduate from the University of Utah with a degree in computer engineering this may.
+          Even though my focus has been in software, it has been benefitted me greatly to understand 
+          the hardware, and how it works and communicates with the software.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h3>How do you recommend learning to code?</h3>
+        <p>
+          I learned to code through attending a university! This experience, I recommend to anyone, if you have the time and means.
+          I also suggest checking out codecademy (that is where I first learned Python). My biggest recommendation is to just start
+          a project. Build a personal website (like this one!), you will learn how a website works, what a client and server is, 
+          what a DNS is, and how to point it! There are plenty of tutorials online, and if you would like mine, sign up above.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h3>What language do you use?</h3>
+        <p>
+          I get asked this question all the time. I use JavaScript for my personal projects, and Python at work.
+          The greatest thing about learning to code, is that you don't learn a language. You learn programming skills and 
+          concepts. These concepts are interchangable to any lanuguage.
+        </p>
+      </div>
+    </div>
+  </div>

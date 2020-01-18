@@ -1,3 +1,7 @@
+This Jekyll template was taken and adapted from Startbootstrap Clean Blog. (https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll)
+
+
+
 Prerequisites: 
 Ruby
 jekyll 3.8.5
