@@ -25,6 +25,9 @@ collections:
   highlights:
     output: true
     permalink: /:collection/:title
+  featuredPosts:
+    output: true
+    permalink: /:collection/:title
 contact_url: https://jadenholladay.herokuapp.com/jocee
 maincolor: '#F2CBCB'
 secondarycolor: '#F2CBCB'

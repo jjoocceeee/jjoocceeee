@@ -23,7 +23,7 @@ layout: default
     </div>
   </header>
 
-  <div class="container-fluid" style="background-color: {{ page.maincolor }}">
+  <!-- <div class="container-fluid" style="background-color: {{ page.maincolor }}">
     <div class="row ">
       <div class="col-lg-8 col-md-10 col-sm-12 mx-auto text-center">
         <p>
@@ -51,15 +51,9 @@ layout: default
         </div>
         </div>
     </form>
-  </div>
+  </div> -->
   <div class="container py-5">
     <div class="row">
-      <div class="col-lg-6 col-md-12 col-sm-12">
-        <a href="/assets/Images/portfolio/computerPortrait.jpeg">
-          <img src="/assets/Images/portfolio/computerPortrait.jpeg" class=" border-white img-thumbnail"
-            alt="Portfolio Piece">
-        </a>
-      </div>
       <div class="col col-lg-6 col-md-12 col-sm-12">
         <div class="row">
           <div class="col">
@@ -81,6 +75,12 @@ layout: default
             </a>
           </div>
         </div>
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12">
+        <a href="/assets/Images/portfolio/computerPortrait.jpeg">
+          <img src="/assets/Images/portfolio/computerPortrait.jpeg" class=" border-white img-thumbnail"
+            alt="Portfolio Piece">
+        </a>
       </div>
     </div>
   </div>
@@ -134,4 +134,36 @@ layout: default
         </p>
       </div>
     </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col text-center mb-3 mt-5">
+        <h1 style="color: {{page.maincolor}}">Featured posts</h1>
+      </div>
+    </div>
+      {% for featuredPost in site.featuredPosts %}
+      <div class="row my-3">  
+        <div class="col-lg-4 col-md-4 col-sm-0 align-items-center d-none d-lg-block">
+          <div class="image">
+              <span class="black_span">
+              <a href="{{ featuredPost.url | prepend: site.baseurl | replace: '//', '/' }}">
+                <img src="{{ featuredPost.thumbnail | prepend: site.baseurl | replace: '//', '/' }}"
+                  class=" border-white" alt="Portfolio Piece">
+              </a>
+            </span>
+          </div>
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-12 mb-9">
+          <a href="{{ featuredPost.url | prepend: site.baseurl | replace: '//', '/' }}">
+            <h3 class="text-center">{{featuredPost.title}}</h3>
+          </a>
+            {% for tag in featuredPost.tags %}
+              <span class="badge badge-pill primary-color">{{tag}}</span>
+            {% endfor %}
+            <p class="small-font">{{featuredPost.description}}</p>
+              <button type="submit" class="btn btn-secondary bckgrnd-dark btn-sm">{{featuredPost.button_name}}</button>
+        </div>
+      </div>
+      <hr>
+      {% endfor %}
   </div>
