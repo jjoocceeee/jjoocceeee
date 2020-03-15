@@ -35,6 +35,10 @@ collections:
     output: true
     permalink: /:collection/:title
     sort_by: number
+  photos:
+    output: true
+    sort_by: number
+    permalink: /:collection/:title
 contact_url: https://jadenholladay.herokuapp.com/jocee
 maincolor: '#F2CBCB'
 secondarycolor: '#F2CBCB'

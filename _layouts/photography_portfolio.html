@@ -1,0 +1,155 @@
+---
+layout: default
+---
+
+<!-- Page Header -->
+{% if page.background %}
+<header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+  {% else %}
+  <header class="masthead">
+    {% endif %}
+    <div class="container">
+      <div class="row">
+        <div class="col-6 mx-auto text-center">
+          <div class="post-heading">
+            <h1>{{ page.title }}</h1>
+            {% if page.subtitle %}
+            <h2 class="subheading">{{ page.subtitle }}</h2>
+            {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container mb-5">
+    <div class="row justify-content-center">
+        <div class="col text-center">
+            <h2>Highlights</h2>
+        </div>
+    </div>
+    <div class="row">
+        {% for photo in site.photos limit: 8 %}
+        <div class="col-3 mt-4">
+            <a target="_blank" href="{{ photo.link }}">
+                <img class="basic-image outline-image"
+                    src="{{ photo.image | prepend: site.baseurl | replace: '//', '/' }}" alt="{{ photo.title }}">
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+<div class="container-fluid bckgrnd mt-5" style="background-color: #{{page.maincolor}}">
+    <div class="row ">
+        <div class="col-lg-8 col-md-10 col-sm-12 mx-auto text-center">
+            <p>
+                We love giving away free photoshoots, discounts, and presets to our subscribers. The best part of running 
+                your own business, is that you are the boss and can give away stuff for free!!! Sign up below to get in on this! 
+            </p>
+        </div>
+    </div>
+    <form>
+        <div class="row mb-3 justify-content-center align-items-center">
+            <div class="col-4 offset-1">
+                <div class="form-group">
+                    <label for="EmailInput"></label>
+                    <input type="email" class="form-control" id="EmailInput" aria-describedby="emailHelp"
+                        placeholder="Enter email">
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="form-group">
+                    <label for="nameInput"></label>
+                    <input type="text" class="form-control" id="nameInput" placeholder="Name">
+                </div>
+            </div>
+            <div class="col-2">
+                <button type="submit" class="btn btn-md"
+                    style="background-color: #{{ page.buttonColor    }}">I Want In!</button>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-10 text-center">
+            <h1>
+                Memories can fade. Photos last forever.
+            </h1>
+            <p>
+                The most important day of your life shouldn't just be photographed, it should be captured. I understand what business I am in.
+                I am not in the photography business, or in a service business. I am in the business of capturing the most important day of your
+                life. I will not let you down. Every detail, moment, and smile will be captured.
+            </p>
+        </div>
+    </div>
+</div>
+<div class="container-fluid bckgrnd my-5" style="background-color: #{{ page.secondaryColor }};">
+    <div class="row justify-content-center align-items-center py-4">
+        <div class="col-4 text-center">
+            <h3>From weddings, to family. I love capturing all stages of life. Check out some more of my work.</h3>
+        </div>
+        {% for photo in site.photos limit: 4 offset: 8%}
+        <div class="col-2">
+            <a target="_blank" href="{{ photo.link }}">
+                <img class="basic-image outline-image"
+                    src="{{ photo.image | prepend: site.baseurl | replace: '//', '/' }}" alt="{{ photo.title }}">
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+<!-- Form with image as a background -->
+<div class="form-background my-5" style="background-image: url('{{ page.filePhoto | prepend: site.baseurl | replace: '//', '/' }}')">
+    <div class="row mt-5">
+        <div class="col-lg-8 col-md-10 col-sm-12 mx-auto text-center">
+            <h2 class="black-text">
+                We can't wait to capture your beautiful day!
+            </h2>
+        </div>
+    </div>
+    <form>
+        <div class="row justify-content-center mb-5">
+            <div class="col-4">
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="EmailInput"></label>
+                            <input type="email" class="form-control transparent-input" id="EmailInput" aria-describedby="emailHelp"
+                                placeholder="Enter email">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="nameInput"></label>
+                            <input type="text" class="form-control transparent-input" id="nameInput" placeholder="Name">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="phoneInput"></label>
+                            <input type="text" class="form-control transparent-input" id="phoneInput" placeholder="Phone">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="form-group">
+                    <label for="descriptionInput"></label>
+                    <textarea class="form-control transparent-input" id="descriptionInput" rows="8" placeholder="Message"></textarea>
+                  </div>
+            </div>
+
+        </div>
+        <div class="row justify-content-center my-5">
+            <div class="col-3">
+                <button type="submit" class="btn btn-md"
+                    style="background-color: #{{ page.secondaryColor }}">Let's Talk!</button>
+            </div>
+        </div>
+    </form>
+</div>
