@@ -28,9 +28,17 @@ collections:
   featuredPosts:
     output: true
     permalink: /:collection/:title
+  templates:
+    output: true
+    permalink: /:collection/:title
+  products:
+    output: true
+    permalink: /:collection/:title
+    sort_by: number
 contact_url: https://jadenholladay.herokuapp.com/jocee
 maincolor: '#F2CBCB'
 secondarycolor: '#F2CBCB'
+compliment: '#9c0045'
 # remote_theme: jekyll-theme-clean-blog
 # theme: jekyll-theme-clean-blog
 # sass:

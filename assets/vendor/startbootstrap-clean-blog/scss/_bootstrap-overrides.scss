@@ -10,6 +10,12 @@
   font-family: 'Montserrat', 'Noto Serif TC', serif;
 }
 
+.panel-img {
+  float:  left;
+  width:  100px;
+  background-size: cover;
+}
+
 img {
   vertical-align: middle;
   border-style: none;
@@ -138,4 +144,13 @@ h1,
 
 .secondary {
   color: $secondary; 
+}
+.compliment {
+  color: #9c0045
+}
+
+.equal {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
 }

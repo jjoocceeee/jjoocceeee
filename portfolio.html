@@ -33,13 +33,13 @@ background: '/assets/Images/website_working_2.jpg'
       <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
         <h3 class="text-center">{{highlight.title}}</h3>
         {% for tag in highlight.tags %}
-        <span class="badge badge-pill primary-color">{{tag}}</span>
-      {% endfor %}
+          <span class="badge badge-pill primary-color">{{tag}}</span>
+        {% endfor %}
         <p class="small-font">{{highlight.long_description}}</p>
         <a href="{{ highlight.url | prepend: site.baseurl | replace: '//', '/' }}">
           <button type="submit" class="btn btn-secondary bckgrnd-dark btn-sm">{{highlight.button_name}}</button>
         </a>
       </div>
-      {% endfor %}
+    {% endfor %}
     </div>
   </div>
