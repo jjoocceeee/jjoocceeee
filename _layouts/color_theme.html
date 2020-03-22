@@ -1,0 +1,84 @@
+---
+layout: default
+---
+<!-- Page Header -->
+{% if page.background %}
+<header class="masthead pb-0 mb-0" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+{% else %}
+<header class="masthead pb-0 mb-0">
+{% endif %}
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-8 mx-auto " >
+        <div class="page-heading">
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="container-fluid bckgrnd mb-4" style="background-color: #{{page.mainColor}}">
+  <div class="row p-2 align-items-center">
+    <div class="col text-center justify-content-center">
+      <h2 style="color: black; font-family: 'Amatic SC', cursive; font-size: 50px;">{{ page.title }}</h2>
+      {% if page.description %}
+      <span class="subheading" style="color: white" ><h4>{{ page.description }}</h4></span>
+      {% endif %}
+      {% if page.buttonText %}
+      <a class="btn m-2" style="background-color: #{{page.highlightSecondary}} ; opacity: 1.0;" href="{{ page.buttonUrl }}"
+      data-toggle="tooltip" data-placement="top" title="{{ page.buttonText }}"><p class="m-0">{{ page.buttonText }}</p>
+      </a>
+      {% endif %}
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="d-flex justify-content-center p-2">
+      <div class="col-5">
+        <h2 class="text-center" style="font-family: 'Amatic SC', cursive; font-size: 22;">{{page.colorName}}</h2>
+        <h4 class="text-center" style="font-family: 'Vidaloka', serif; font-size: 32px;">#{{page.mainColor}}</h4>
+        <p>{{page.fact_1}}</p>
+      </div>
+      <div class="col-5">
+          <a target="_blank" href="{{ page.image_1 }}">
+              <img class="basic-image outline-image"
+                  src="{{ page.image_1 | prepend: site.baseurl | replace: '//', '/' }}" alt="{{ page.title }}">
+          </a>
+      </div>
+  </div>
+
+  <div class="d-flex justify-content-center p-2">
+    <div class="col-5">
+      <a target="_blank" href="{{page.image_2}}">
+          <img class="basic-image outline-image"
+              src="{{ page.image_2 | prepend: site.baseurl | replace: '//', '/' }}" alt="{{ page.title }}">
+      </a>
+    </div>
+    <div class="col-5">
+      <p>{{page.fact_2}}</p>
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-center p-2">
+    <div class="col-5">
+      <p>{{page.fact_3}}</p>
+    </div>
+    <div class="col-5">
+      <a target="_blank" href="{{page.image_3}}">
+          <img class="basic-image outline-image"
+              src="{{ page.image_3 | prepend: site.baseurl | replace: '//', '/' }}" alt="{{ page.title }}">
+      </a>
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-center p-2">
+    <div class="col-5">
+      <a target="_blank" href="{{page.image_4}}">
+          <img class="basic-image outline-image"
+              src="{{ page.image_4 | prepend: site.baseurl | replace: '//', '/' }}" alt="{{ page.title }}">
+      </a>
+    </div>
+    <div class="col-5">
+      <p>{{page.fact_4}}</p>
+    </div>
+  </div>
+</div>
