@@ -32,37 +32,37 @@ layout: default
   </div>
 </div>
 <div class="container">
-  <div class="d-flex justify-content-center p-2">
-      <div class="col-5">
-        <h2 class="text-center" style="font-family: 'Amatic SC', cursive; font-size: 22;">{{page.colorName}}</h2>
-        <h4 class="text-center" style="font-family: 'Vidaloka', serif; font-size: 32px;">#{{page.mainColor}}</h4>
-        <p>{{page.fact_1}}</p>
-      </div>
-      <div class="col-5">
-          <a target="_blank" href="{{ page.image_1 }}">
-              <img class="basic-image outline-image"
-                  src="{{ page.image_1 | prepend: site.baseurl | replace: '//', '/' }}" alt="{{ page.title }}">
-          </a>
-      </div>
+  <div class="row justify-content-center p-2">
+    <div class="col-sm-12 col-md-12 col-lg-5">
+      <h2 class="text-center" style="font-family: 'Amatic SC', cursive; font-size: 22;">{{page.colorName}}</h2>
+      <h4 class="text-center" style="font-family: 'Vidaloka', serif; font-size: 32px;">#{{page.mainColor}}</h4>
+      <p>{{page.fact_1}}</p>
+    </div>
+    <div class="col-sm-12 col-md-12 col-lg-5">
+      <a target="_blank" href="{{ page.image_1 }}">
+        <img class="basic-image outline-image"
+            src="{{ page.image_1 | prepend: site.baseurl | replace: '//', '/' }}" alt="{{ page.title }}">
+      </a>
+    </div>
   </div>
 
-  <div class="d-flex justify-content-center p-2">
-    <div class="col-5">
+  <div class="row justify-content-center p-2">
+    <div class="col-md-12 col-lg-5 col-sm-12 order-lg-2">
+      <p>{{page.fact_2}}</p>
+    </div>
+    <div class="col-sm-12 col-md-12 col-lg-5 order-lg-1">
       <a target="_blank" href="{{page.image_2}}">
           <img class="basic-image outline-image"
               src="{{ page.image_2 | prepend: site.baseurl | replace: '//', '/' }}" alt="{{ page.title }}">
       </a>
     </div>
-    <div class="col-5">
-      <p>{{page.fact_2}}</p>
-    </div>
   </div>
 
-  <div class="d-flex justify-content-center p-2">
-    <div class="col-5">
+  <div class="row justify-content-center p-2">
+    <div class="col-md-12 col-lg-5 col-sm-12">
       <p>{{page.fact_3}}</p>
     </div>
-    <div class="col-5">
+    <div class="col-sm-12 col-md-12 col-lg-5">
       <a target="_blank" href="{{page.image_3}}">
           <img class="basic-image outline-image"
               src="{{ page.image_3 | prepend: site.baseurl | replace: '//', '/' }}" alt="{{ page.title }}">
@@ -70,15 +70,15 @@ layout: default
     </div>
   </div>
 
-  <div class="d-flex justify-content-center p-2">
-    <div class="col-5">
-      <a target="_blank" href="{{page.image_4}}">
-          <img class="basic-image outline-image"
-              src="{{ page.image_4 | prepend: site.baseurl | replace: '//', '/' }}" alt="{{ page.title }}">
-      </a>
-    </div>
-    <div class="col-5">
+  <div class="row justify-content-center p-2">
+    <div class="col-sm-12 col-md-12 col-lg-5 order-lg-2">
       <p>{{page.fact_4}}</p>
+    </div>
+    <div class="col-sm-12 col-md-12 col-lg-5 order-lg-1">
+      <a target="_blank" href="{{page.image_4}}">
+        <img class="basic-image outline-image"
+            src="{{ page.image_4 | prepend: site.baseurl | replace: '//', '/' }}" alt="{{ page.title }}">
+      </a>
     </div>
   </div>
 </div>
