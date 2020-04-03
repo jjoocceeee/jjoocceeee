@@ -28,7 +28,7 @@ layout: default
       <div class="col-lg-8 col-md-10 col-sm-12 mx-auto text-center">
         <p>
           The best part about technology is belonging to a community who shares.
-          Sign up below and I will send you my step-by-step tutorial for hosting a beautiful website for 100% FREE. Literally. No strings attached.
+          Sign up below and I will send you my step-by-step tutorial for hosting a beautiful website for 100% FREE (just like this one!). Literally. No strings attached.
         </p>
       </div>
     </div>
@@ -59,17 +59,16 @@ layout: default
           <div class="col">
             <p class="mt-n4">
               <h3>Hi, I'm JoCee</h3>
-              I'm a computer engineer graduating in April, 2020 (counting down the days). I love technology, math, and
+              I'm a computer engineer graduating this May (counting down the days). I love technology, math, and
               puzzles. Seriously, I'm one of <i>those</i> people, I do a sudoku every. single. day.
               I also enjoy building web applications. GraphQl and React are my go tos. I do have experience with
-              Python, .Net, Java, R, and a handful of other languages. My current side project is creating an
-              Android app to enhance Instagram Stories (I know, I know, Instagram is an addiction, but if it gets me coding
-              it can't be THAT bad?!?!). What are you building for fun?
+              Python, .Net, Java, R, and a handful of other languages. I also have a fondness for creating graphics in illustrator.
+              If I weren't a computer scientist, I'd probably be a graphic designer.
             </p>
           </div>
         </div>
         <div class="row mt-n5">
-          <div class="col-6 col-sm-12">
+          <div class="col-6 col-sm-12 btn btn-main">
             <a href="/about">
               <p class="text-pink">LEARN MORE</p>
             </a>
@@ -117,10 +116,10 @@ layout: default
       <div class="col">
         <h3>How do you recommend learning to code?</h3>
         <p>
-          I learned to code through attending a university! This experience, I recommend to anyone, if you have the time and means.
-          I also suggest checking out codecademy (that is where I first learned Python). My biggest recommendation is to just start
+          I learned to code through attending a university! I recommend this experience to anyone, if you have the time and means.
+          I also suggest checking out codecademy (that is where I first learned Python 10 years ago!). My biggest recommendation is to just start
           a project. Build a personal website (like this one!), you will learn how a website works, what a client and server is, 
-          what a DNS is, and how to point it! There are plenty of tutorials online, and if you would like mine, sign up above.
+          what a DNS is, and how to point it! There are plenty of tutorials online, and if you would like mine, <a href="/featuredPosts/free-website">check it out here</a>.
         </p>
       </div>
     </div>
@@ -129,7 +128,7 @@ layout: default
         <h3>What language do you use?</h3>
         <p>
           I get asked this question all the time. I use JavaScript for my personal projects, and Python at work.
-          The greatest thing about learning to code, is that you don't learn a language. You learn programming skills and 
+          The greatest thing about learning to code, is that you don't learn just one language. You learn programming skills and 
           concepts. These concepts are interchangable to any lanuguage.
         </p>
       </div>
@@ -161,7 +160,9 @@ layout: default
               <span class="badge badge-pill primary-color">{{tag}}</span>
             {% endfor %}
             <p class="small-font">{{featuredPost.description}}</p>
+            <a href="{{ featuredPost.url | prepend: site.baseurl | replace: '//', '/' }}">
               <button type="submit" class="btn btn-secondary bckgrnd-dark btn-sm">{{featuredPost.button_name}}</button>
+            </a>
         </div>
       </div>
       <hr>
