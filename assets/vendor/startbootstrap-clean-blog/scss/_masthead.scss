@@ -26,6 +26,12 @@ header.masthead {
       padding: 200px 0;
     }
   }
+  .small-heading {
+    padding: 120px 0 150px;
+    @media only screen and (min-width: 768px) {
+      padding: 120px 0;
+    }
+  }
   .page-heading,
   .site-heading {
     text-align: center;

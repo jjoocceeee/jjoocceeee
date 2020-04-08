@@ -63,20 +63,20 @@ layout: default
                     <input type="text" class="form-control" id="nameInput" placeholder="Name">
                 </div>
             </div>
-            <div class="col-2">
-                <button type="submit" class="btn btn-md"
-                    style="background-color: #{{ page.buttonColor    }}">I Want In!</button>
+            <div class="col-3">
+                <button type="submit" class="btn btn-sm"
+                    style="background-color: #{{ page.buttonColor}}">I Want In!</button>
             </div>
         </div>
     </form>
 </div>
-<div class="container mt-5">
+<div class="container mt-3">
     <div class="row justify-content-center">
         <div class="col-10 text-center">
-            <h1>
-                Memories can fade. Photos last forever.
-            </h1>
             <p>
+            <h3>
+                Memories can fade. Photos last forever.
+            </h3>
                 The most important day of your life shouldn't just be photographed, it should be captured. I understand what business I am in.
                 I am not in the photography business, or in a service business. I am in the business of capturing the most important day of your
                 life. I will not let you down. Every detail, moment, and smile will be captured.
@@ -84,12 +84,12 @@ layout: default
         </div>
     </div>
 </div>
-<div class="container-fluid bckgrnd my-5" style="background-color: #{{ page.secondaryColor }};">
+<div class="container-fluid bckgrnd my-3" style="background-color: #{{ page.secondaryColor }};">
     <div class="row justify-content-center align-items-center py-4">
         <div class="col-4 text-center">
-            <h3>From weddings, to family. I love capturing all stages of life. Check out some more of my work.</h3>
+            <h5>From weddings, to families. I love capturing all stages of life. Check out some more of my work.</h5>
         </div>
-        {% for photo in site.photos limit: 4 offset: 8%}
+        {% for photo in site.photos limit: 4 offset: 7%}
         <div class="col-2">
             <a target="_blank" href="{{ photo.link }}">
                 <img class="basic-image outline-image"
@@ -103,8 +103,8 @@ layout: default
 <div class="form-background my-5" style="background-image: url('{{ page.filePhoto | prepend: site.baseurl | replace: '//', '/' }}')">
     <div class="row mt-5">
         <div class="col-lg-8 col-md-10 col-sm-12 mx-auto text-center">
-            <h2 class="black-text">
-                We can't wait to capture your beautiful day!
+            <h2 class="white-text">
+                Let's Connect!
             </h2>
         </div>
     </div>

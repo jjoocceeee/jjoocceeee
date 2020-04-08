@@ -176,3 +176,12 @@ h1,
 .white {
   background-color: white;
 }
+
+.square {
+  height: 60px;
+  width: 40px;
+  background-color: #ffffff;
+  position: relative;
+  top: 80px;
+  z-index: 1;
+}

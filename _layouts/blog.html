@@ -1,0 +1,98 @@
+---
+layout: default
+---
+
+<!-- Page Header -->
+{% if page.background %}
+<header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+  {% else %}
+  <header class="masthead">
+    {% endif %}
+    <div class="container">
+      <div class="row">
+        <div class="col-6 mx-auto text-center">
+          <div class="small-heading" >
+              <div style="background-color: white;" class="px-5">
+                <h2 style="font-size: 40px; font-family: 'Lora', serif; color:black" class="pt-3">{{ page.title }}</h2>
+                {% if page.subtitle %}
+                <h5 class="subheading" style="font-size: 24px; font-family: 'Source Sans Pro', 'Noto Serif TC', serif; color:black">{{ page.subtitle }}</h5>
+                <button type="submit" class="btn btn-sm pb-3">{{page.mainButton}}</button>
+                {% endif %}
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container-fluid mt-5 mb-0" style="background-color: #{{ page.maincolor }}">
+    <div class="row ">
+        <div class="col-lg-6 col-md-6 col-sm-12 mx-auto text-center">
+            <p class="mb-0 mt-3 p-0">
+                Keep in the Loop! I send out new blog posts and weekly discount codes! Sign up below and let's be friends.
+            </p>
+        </div>
+    </div>
+    <form>
+        <div class="row mb-3 mt-0 justify-content-center align-items-center">
+            <div class="col-md-4 md-offset-1">
+                <div class="form-group">
+                    <label for="EmailInput"></label>
+                    <input type="email" class="form-control" id="EmailInput" aria-describedby="emailHelp"
+                        placeholder="Enter email">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="nameInput"></label>
+                    <input type="text" class="form-control" id="nameInput" placeholder="Name">
+                </div>
+            </div>
+            <div class="col-md-3 justify-content-center">
+                <button type="submit" class="btn btn-sm"
+                    style="background-color: #{{ page.buttonColor }}">I Want In!</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="container mb-5">
+    <div class="row">
+        {% for blog in site.highlights limit: 4 %}
+        <div class="mt-4 col-md-6">
+            <div class="square">
+                <p style="font-size:26px;" class="m-0 ml-1 p-0">{{blog.day}}</p>
+                <p style="font-size:16px;" class="mt-n2 ml-1 pt-0">{{blog.month}}</p>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <a target="_blank" href="{{ blog.background }}">
+                        <img class="basic-image outline-image"
+                            src="{{ blog.background  | prepend: site.baseurl | replace: '//', '/' }}" alt="{{ blog.title }}">
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h4 style="font-family: 'Lora', serif; color:black" class="pt-3 text-center">{{ blog.title }}</h4>
+                    <p class=" d-none d-sm-none d-md-block" style="font-size: 18px;">{{ blog.description }}</p>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-9 d-none d-sm-none d-md-block">
+                    <a href="">
+                        <button type="submit" class="btn btn-md"
+                            style="background-color: #{{page.buttonColor }};">Read More</button>
+                    </a>
+                </div>
+                <div class="col-3 ml-auto">
+                    <i class="fas fa-comment-alt"></i>
+                    {{blog.comment_number}}
+                    <i class="fas fa-share-alt"></i>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
