@@ -1,0 +1,210 @@
+---
+layout: default
+---
+<div class="container-fluid bckgrnd pt-5 mb-5" style="background-color: #{{page.mainColor}}">
+  <div class="row py-5 align-items-center">
+    <div class="col text-center justify-content-center">
+      <h2 style="color: black; font-family: 'Amatic SC', cursive; font-size: 50px;">{{ page.title }}</h2>
+      {% if page.description %}
+      <span class="subheading" style="color: white">
+        <h4>{{ page.description }}</h4>
+      </span>
+      {% endif %}
+      {% if page.buttonText %}
+      <a class="btn m-2" style="background-color: #{{page.highlightSecondary}} ; opacity: 1.0;"
+        href="{{ page.buttonUrl }}" data-toggle="tooltip" data-placement="top" title="{{ page.buttonText }}">
+        <p class="m-0">{{ page.buttonText }}</p>
+      </a>
+      {% endif %}
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row justify-content-center m-4">
+    <div class="col-sm-4 col-md-4 col-lg-4">
+      <a target="_blank" href="{{ page.portrait }}">
+        <img class="basic-image outline-image" src="{{ page.portrait | prepend: site.baseurl | replace: '//', '/' }}"
+          alt="{{ page.title }}">
+      </a>
+    </div>
+    <!-- order-lg-2 -->
+    <div class="col-md-6 col-lg-4 col-sm-4">
+      <p>{{page.bio}}</p>
+      <p>{{page.bio_2}}</p>
+    </div>
+  </div>
+  <div class="row my-5">
+    <div class="col">
+      <a target="_blank" href="{{page.image_1}}">
+        <img class="basic-image outline-image" src="{{ page.image_1 | prepend: site.baseurl | replace: '//', '/' }}"
+          alt="{{ page.title }}">
+      </a>
+    </div>
+  </div>
+  <div class="row align-items-center my-4">
+    <div class="col-lg-5 d-none d-md-block">
+      <a target="_blank" href="{{page.image_1}}">
+        <img class="basic-image outline-image" src="{{ page.image_3 | prepend: site.baseurl | replace: '//', '/' }}"
+          alt="{{ page.title }}">
+      </a>
+    </div>
+    <div class="col-md-7 col-lg-7 col-sm-12 justify-content-center">
+      <div class="row">
+        <div class="col align-items-center text-center">
+          <h5 style="color: black; font-family: 'Amatic SC', cursive; font-size: 50px;">Stats & Audience</h5>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-4 col-lg-4 col-sm-6 pt-4">
+          <div class="row">
+            <div class="col justify-content-center text-center">
+              <i class="fab fa-instagram fa-4x" style="color:#{{page.mainColor}};"></i>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col text-center">
+              <p class="py-0 my-0">{{page.followers}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-4 col-sm-6 pt-4">
+          <div class="row">
+            <div class="col justify-content-center text-center">
+              <i class="fa fa-comments fa-4x" style="color:#{{page.mainColor}};"></i>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col text-center">
+              <p class="py-0 my-0">{{page.comments}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-4 col-sm-6 pt-4">
+          <div class="row">
+            <div class="col justify-content-center text-center">
+              <i class="fa fa-heart fa-4x" style="color:#{{page.mainColor}};"></i>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col text-center">
+              <p class="py-0 my-0">{{page.impressions}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-4 col-sm-6 pt-4">
+          <div class="row">
+            <div class="col justify-content-center text-center">
+              <i class="fa fa-globe fa-4x" style="color:#{{page.mainColor}};"></i>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col text-center">
+              <p class="py-0 my-0">
+                {{page.america}}
+              </p>
+              <p class="py-0 my-0">
+                {{page.worldwide}}
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-4 col-sm-6 pt-4">
+          <div class="row">
+            <div class="col justify-content-center text-center">
+              <i class="fa fa-users fa-4x" style="color:#{{page.mainColor}};"></i>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col text-center">
+              <p class="py-0 my-0">
+                {{page.age_1}}
+              </p>
+              <p class="py-0 my-0">
+                {{page.age_2}}
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-4 col-sm-6 pt-4">
+          <div class="row">
+            <div class="col justify-content-center text-center">
+              <i class="fa fa-heart fa-4x" style="color:#{{page.mainColor}};"></i>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col text-center">
+              <p class="py-0 my-0">
+                {{page.female}}
+              </p>
+              <p class="py-0 my-0">
+                {{page.male}}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row my-5">
+    <div class="col">
+      <a target="_blank" href="{{page.banner_2}}">
+        <img class="basic-image outline-image" src="{{ page.banner_2 | prepend: site.baseurl | replace: '//', '/' }}"
+          alt="{{ page.title }}">
+      </a>
+    </div>
+  </div>
+
+  <div class="row align-items-center p-2">
+    <div class="col-sm-12 col-md-12 col-lg-5 order-lg-2 justify-content-center">
+      <p>{{page.explanation}}</p>
+      <p>{{page.gallery}}</p>
+      <div class="text-center">
+        <h5 style="color: black; font-family: 'Amatic SC', cursive; font-size: 35px;"">Products</h5>
+        <a class="py-0 my-0" href="{{page.post_product}}"><p>Post + Caption</p></a>
+        <a class="py-0 my-0" href="{{page.post_stop_motion}}"><p>Stop Motion Video + Caption</p></a>
+        <a class="py-0 my-0" href="{{page.post_graphic_design}}"><p>Graphic Design + Caption</p></a>
+        <p class="py-0 my-0"> Instagram Story Series</p>
+    </div>
+    </div>
+    <div class="col-sm-12 col-md-12 col-lg-7">
+      <div class="row">
+        <div class="col text-center" >
+          <h1 style="color: black; font-family: 'Amatic SC', cursive;">{{page.notable_collaborations}} - <a href="https://www.microsoft.com/en-us/microsoft-365/microsoft-teams/group-chat-software?&ef_id=Cj0KCQjwupD4BRD4ARIsABJMmZ8xiAJY1FNVVEaOBib-fREPoUQNs-fSfZBV4UJESa-LdPg3DeatfFgaAtpeEALw_wcB:G:s&OCID=AID2100233_SEM_Cj0KCQjwupD4BRD4ARIsABJMmZ8xiAJY1FNVVEaOBib-fREPoUQNs-fSfZBV4UJESa-LdPg3DeatfFgaAtpeEALw_wcB:G:s&gclid=Cj0KCQjwupD4BRD4ARIsABJMmZ8xiAJY1FNVVEaOBib-fREPoUQNs-fSfZBV4UJESa-LdPg3DeatfFgaAtpeEALw_wcB">{{page.collab_name}}</a></h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <a target="_blank" href="{{page.teams_1}}">
+            <img class="basic-image outline-image" src="{{ page.teams_1 | prepend: site.baseurl | replace: '//', '/' }}"
+              alt="{{ page.title }}">
+          </a>
+        </div>
+        <div class="col">
+          <a target="_blank" href="{{page.teams_2}}">
+            <img class="basic-image outline-image" src="{{ page.teams_2 | prepend: site.baseurl | replace: '//', '/' }}"
+              alt="{{ page.title }}">
+          </a>
+        </div>
+      </div>
+      <div class="row pt-4">
+        <div class="col">
+          <a target="_blank" href="{{page.teams_3}}">
+            <img class="basic-image outline-image" src="{{ page.teams_3 | prepend: site.baseurl | replace: '//', '/' }}"
+              alt="{{ page.title }}">
+          </a>
+        </div>
+        <div class="col">
+          <a target="_blank" href="{{page.teams_4}}">
+            <img class="basic-image outline-image" src="{{ page.teams_4 | prepend: site.baseurl | replace: '//', '/' }}"
+              alt="{{ page.title }}">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row align-items-center">
+    <div class="col-12 text-center">
+      <p>I love my home state of Utah! If you are based out of Utah, I am happy to give you a discount on all collaborations!</p>
+    </div>
+  </div>
+</div>

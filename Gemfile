@@ -15,3 +15,6 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
 # Emojis
 gem 'jemoji'
+
+#font-awesome
+gem 'jekyll-font-awesome-sass'

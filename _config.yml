@@ -17,6 +17,7 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jemoji
+  - jekyll-font-awesome-sass
 # collections_dir: collections
 collections:
   portfolios:
@@ -43,6 +44,7 @@ contact_url: https://jadenholladay.herokuapp.com/jocee
 maincolor: '#F2CBCB'
 secondarycolor: '#F2CBCB'
 compliment: '#9c0045'
+
 # remote_theme: jekyll-theme-clean-blog
 # theme: jekyll-theme-clean-blog
 # sass:
