@@ -1,0 +1,57 @@
+---
+layout: post
+title: Creating your own VSCode Theme!
+date: 2020-05-27 18:04:42 -0700
+description: Create the perfect theme for VSCode. Plus template and instructions to get you started!
+subtitle: Create your own VSCode theme! Plus a template and instructions to get you started. Easy, breezy!
+background: '/assets/Images/brand/colorTheme.jpg'
+categories: Technology
+buttonUrl: 'https://github.com/jjoocceeee/vs-code-color-theme-boiler'
+buttonText: Check it out here!
+highlightSecondary: E0B8BA
+---
+
+<div class="container">
+    <div class="row">
+        <div class="col text-center">
+            <h1>May we love them, May we Use them, May we write them.</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p>
+                Creating your own VSCode color theme is actually pretty simple. Like wayyyyy simple. A Visual Studio
+                Code Color theme is just a
+                set of JSON key-value pairs. The key is the type of object, and the value is the color of that object.
+            </p>
+            <p>
+                Although the process is very simple, there are many, many, many key value pairs to assign. To make
+                things even more complicated, there are different theme sources for different languages. So your theme
+                may look great in Python, but looks awful in C#, or Markdown, or javaScript, or whatever.
+            </p>
+            <p>
+                I created a boiler plate that seperates the keys value pairs into language sections. I also added
+                comments to help you understand what key the value is changing.
+            </p>
+            <p>
+                Just fork the repository, and you are off to the races!
+            </p>
+        </div>
+    </div>
+    <div class="row align-items-center">
+        <div class="col justify-content-center">
+            <a class="btn m-2" style="background-color: #{{page.highlightSecondary}} ; opacity: 1.0;"
+                href="{{ page.buttonUrl }}" data-toggle="tooltip" data-placement="top" title="{{ page.buttonText }}">
+            <p class="m-0">{{ page.buttonText }}</p>
+        </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-center">
+            <p>
+                If you want to see what you could make, checkout out the color theme I created with this template, it is
+                <a href="https://marketplace.visualstudio.com/items?itemName=jjoocceeee.feminine-code">Here!!!!</a>
+            </p>
+        </div>
+    </div>
+</div>
