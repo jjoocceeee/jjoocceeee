@@ -1,0 +1,90 @@
+---
+layout: page
+title: Let's Connect!
+background: '/assets/Images/portfolio/pinkKeyboard-min.jpg'
+---
+
+<section id="contact">
+  <h1></h1>
+    <div class="container">
+      <form id="emailForm" name="emailForm">
+        <div class="row py-3 justify-content-center">
+          <div class="col-lg-8 col-md-8 col-sm-10">
+              <div id="response"></div>
+          </div>
+        </div>
+        <div class="row py-3 justify-content-center">
+            <div class="col-lg-8 col-md-8 col-sm-10">
+                <p>Wow! I am so excited to you made it to this page. I love connecting with new people. Fill out the form below, and I will be in touch real soon!</p>
+            </div>
+          </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-8 col-sm-10">
+            <input type="email" id="email" name="email" class="form-control" placeholder="Your Email Address"
+              required />
+          </div>
+        </div>
+        <div class="row pt-3 justify-content-center">
+          <div class="col-md-8 col-sm-10">
+            <input type="text" id="fullName" name="fullName" class="form-control" placeholder="Your Full Name"
+              required />
+          </div>
+        </div>
+        <div class="row pt-3 justify-content-center">
+          <div class="col-md-8 col-sm-10">
+            <input type="tel" id="phone" name="phone" class="form-control" placeholder="Your Phone Number (optional)" />
+          </div>
+        </div>
+        <div class="row pt-3 justify-content-center">
+          <div class="col-md-8 col-sm-10">
+            <textarea id="content" name="content" class="form-control" placeholder="Your Message" required></textarea>
+          </div>
+        </div>
+        <div class="row pt-3 ">
+          <div class="col-md-10 col-sm-12">
+            <div class="justify-content-end d-flex">
+              <button id="submitButton" name="send" type="submit" class=" btn btn-primary submit">SEND</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+</section>
+
+<script>
+  function main() {
+    console.log("Sending Email")
+    $('#emailForm').submit(e => {
+      sendEmail(e, "{{site.contact_url}}")
+    });
+  }
+
+  function isArray(what) {
+    return Object.prototype.toString.call(what) === '[object Array]';
+  }
+
+  function sendEmail(e, url) {
+    $("#submitButton").prop("disabled", true);
+
+    $.ajax({
+      url: url,
+      dataType: 'text',
+      type: 'post',
+      contentType: 'application/x-www-form-urlencoded',
+      data: $(e.target).serialize(),
+      success: function (data, textStatus, jQxhr) {
+        var json = JSON.parse(data);
+        $('#response').html(json.message);
+      },
+      error: function (jqXhr, textStatus, errorThrown) {
+        $("#submitButton").prop("disabled", false);
+        var json = JSON.parse(jqXhr.responseText);
+        $('#response').html(json[0].message);
+      }
+    });
+
+    e.preventDefault();
+  }
+  
+  main();
+</script>

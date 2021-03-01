@@ -1,0 +1,27 @@
+---
+layout: page
+title: Templates
+background: '/assets/Images/brand/keyboard-lay-flowers.jpg'
+---
+
+<div class="container">
+  {% for temp in site.templates %}
+    <div class="row align-items-center justify-content-center mb-5">
+      <div class="col-8 justify-content-center">
+        <div class="row">
+          <div class="col">
+            <h3 class="text-center">{{temp.title}}</h3>
+          </div>
+        </div>
+        <div class="image">
+          <span class="black_span">
+          <a href="{{ temp.url | prepend: site.baseurl | replace: '//', '/' }}">
+            <img src="{{ temp.thumbnail | prepend: site.baseurl | replace: '//', '/' }}"
+              class=" border-white" alt="Portfolio Piece">
+          </a>
+        </span>
+      </div>
+      </div>
+    </div>
+  {% endfor %}
+  </div>
