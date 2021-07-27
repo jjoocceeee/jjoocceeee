@@ -18,6 +18,10 @@ plugins:
   - jekyll-paginate
   - jemoji
   - jekyll-font-awesome-sass
+  - jekyll-redirect-from
+  
+whitelist:
+  - jekyll-redirect-from
 # collections_dir: collections
 collections:
   portfolios:
